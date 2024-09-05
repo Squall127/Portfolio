@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./variables.css');
+@import url('./general.css');
+
+.header {
+    background-color: var(--color-azul);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.header__a--logo {
+    text-transform: uppercase;
+    display: block;
+}
+
+.header__a--menu {
+    background-color: var(--color-verde);
+}
+
+.header__nav {
+
+}
+
+.header__nav--principal {
+
+}
+
+.header__nav--principal ul li {
+    list-style: none;
+}
+
+.main__section--banner {
+    background-color: var(--color-verde);
+    color: #ffff;
+}
+
+.main__section--banner h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.main__section--portfolio {
+    text-align: center;
+}
+
+.main__section--portfolio img {
+    width: 300px;
+}
+
+.main__section--about {
+    background-color: var(--color-verde);
+    color: #ffff;
+}
+
+#contact {
+    text-transform: uppercase;
+}
+
+footer {
+    text-transform: uppercase;
+}
+
+.parrafo {
+    font-size: 30px;
+    line-height: 40px
+}
