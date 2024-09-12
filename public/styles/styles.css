@@ -5,16 +5,16 @@
 
 .header {
     background-color: var(--color-azul);
-    text-align: center;
-    text-transform: uppercase;
     color: #ffff;
     padding: 30px 10px 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .header h2 {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    padding: 10px;
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -26,49 +26,58 @@
     margin-top: 15px;
     padding: 10px;
     border-radius: 5px;
-    font-size: 0.8rem
+    font-size: 0.8rem;
 }
 
-.header__nav {}
+.header__nav--principal {
+    display: none;
+}
 
-.header__nav--principal {}
-
-.header__nav--principal ul li {
+.header__nav--principal ul {
     list-style: none;
 }
 
 .main__section--banner {
     background-color: var(--color-verde);
     color: #ffff;
-    padding: 40px;
+    padding: 40px 10px 60px;
     text-align: center;
 }
 
 .main__section--banner h1 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 800;
     text-align: center;
-    padding: 10px;
-    line-height: 40px;
+    line-height: 48px;
     margin: 30px 0;
 }
 
 .main__section--banner p {
-    padding: 10px;
     font-size: 1.35rem;
-    margin-top: 10px;
 }
 
 .main__section--portfolio {
     text-align: center;
-    color: #ffff;
-    padding: 70px 10px;
+    color: var(--color-azul);
+    padding: 80px 10px;
     text-align: center;
 }
 
-.main__section--portfolio img {
-    width: 300px;
+.main__section--portfolio hr {
+    border: 2px solid var(--color-azul);
+}
+
+.main__section--portfolio-box-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main__section--portfolio-box-images img {
+    width: 100%;
 }
 
 .main__section--about {
@@ -78,14 +87,24 @@
     padding: 80px 20px;
 }
 
+.main__section--portfolio hr {
+    border: 2px solid 
+}
+
 .main__section--about h2 {
     color: #ffff;
 }
 
-.main__section--about p {
+.box-text--about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-text--about p {
     text-align: left;
     line-height: 30px;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 .main__section--about a {
@@ -96,28 +115,117 @@
     margin-top: 90px;
 }
 
-.main__section--about a span {
-    margin: ;
+.main__section--about span {
+    margin-left: 10px;
 }
 
 #contact {
     text-transform: uppercase;
 }
 
-footer {
+.footer {
     background-color: var(--color-azul);
     text-transform: uppercase;
     color: #ffff;
+    text-align: center;
+    padding: 80px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
 }
 
 footer h3 {
     text-transform: uppercase;
-    margin: 30px;
+    margin: 30px 0;
     color:#ffff;
     font-weight: 800;
+    font-size: 1.4rem;
 }
 
-.parrafo {
-    font-size: 30px;
-    line-height: 40px
+.box-redes--footer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 0 60px;
 }
+
+.box-redes--footer a {
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 1px #ffff;
+    padding: 8px;
+    width: 40px;
+}
+
+@media (min-width: 768px) {
+    .header {
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .main__section--portfolio-box-images {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between (15px);
+        padding: 0 30px;
+    }
+
+    .main__section--portfolio-box-images img {
+        width: 48.5%;
+    }
+
+    .box-text--about {
+        padding: 0 30px;
+        }
+}
+
+@media (min-width: 1024px) {
+
+    .header {
+        padding: 30px 60px;
+        }
+
+    .header__nav--principal {
+        display: block;
+    }
+
+    .header__a--menu {
+        display: none;
+        text-transform: uppercase;
+    }
+
+    .header__nav--principal ul {
+        display: flex;
+        gap: 25px;
+        font-weight: 500;
+    }
+
+    .main__section--portfolio-box-images {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between (15px);
+        padding: 0 50px;
+    }
+
+    .main__section--portfolio-box-images img {
+        width: 32%;
+    }
+
+    .box-text--about {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+

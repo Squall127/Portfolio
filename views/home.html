@@ -12,11 +12,11 @@
     <header class="header">
       <!-- logotipo/marca -->
       <h2>
-      <a class= "header__a--logo" href="/">freelance portfolio</a>
+      <a class= "header__a--logo" href="#">freelance portfolio</a>
       </h2>
       <a class="header__a--menu " href="a"> MENU <i class= "fa-solid fa-bars"></i></a>
       <!-- menu de navegación -->
-      <nav class="nav--principal">
+      <nav class="header__nav--principal">
         <ul>
           <li>
             <a href="#portfolio">portfolio</a>
@@ -29,7 +29,6 @@
           </li>
         </ul>
       </nav>
-      </a>
     </header>
     <!-- sección principal del sitio -->
     <main>
@@ -52,12 +51,12 @@
       <!-- sección de imagenes del portfolio -->
       <section class="main__section--portfolio">
         <h2>portfolio</h2>
-        <div class="box--star-white">
+        <div class="box--star">
           <hr />
           <p><i class="fa-solid fa-star"></i></p>
           <hr />
         </div>
-        <div>
+        <div class="main__section--portfolio-box-images">
           <img src="/images/cabin.png" alt="imagen de cabaña" />
           <img src="/images/cake.png" alt="imagen de pastel" />
           <img src="/images/circus.png" alt="imagen de circo" />
@@ -69,27 +68,27 @@
 
       <!-- seccion acerca de mí -->
       <section class="main__section--about">
-        <h2>about</h2>
+        <h2 id="about">about</h2>
         <div class="box--star">
           <hr />
           <span><i class="fa-solid fa-star"></i></span>
           <hr />
         </div>
-        <div>
-          <p class="parrafo parrafo_izquierdo">
+        <div class= "box-text--about">
+          <p class="parrafo parrafo_cielo">
             Freelance is a free landing page theme created for free use. The
             download includes the complete source files including HTML, CSS, and
             JavaScript as weel as optional SASS stylesheets for easy
-            customization
+            customization.
           </p>
-          <p class="parrafo parrafo_derecho">
+          <p class="parrafo parrafo_tierra">
             Whether you're a student looking to showcase your work, a
             professional looking to attact clients, or a graphic artist looking
             to share your projects, this template is the perferct starting
             point!
           </p>
         </div>
-        <a href="#"><i class=""></i></a>
+        <a href="#"><i class="fa-solid fa-download"></i> Download Now!</a>
       </section>
 
       <!-- seccion del formulario de contacto -->
@@ -98,10 +97,10 @@
       </section>
     </main>
     <!-- pie de pagina (footer) -->
-     <footer>
+     <footer class="footer">
       <section>
         <!-- dirección -->
-        <article>
+        <article class="footer__article--address">
           <div>
             <h3>location</h3>
             <p>2215 Jhon Daniel Drive</p>
@@ -109,9 +108,9 @@
           </div>
         </article>
         <!-- redes sociales -->
-        <article>
+        <article class="footer__article--redes">
             <h3>around the web</h3>
-            <div>
+            <div class="box-redes--footer">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
                 <a href=""><i class="fa-brands fa-google"></i></a>
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -120,9 +119,9 @@
             </div>
         </article>
         <!-- acerca de mi -->
-        <article>
+        <article class="footer__article--about">
             <h3>about freelancer</h3>
-            <p>Freelance is free and open souce landing page theme created to <span>your free personal use</span>.</p>
+            <p class="fondo_cielo">Freelance is free and open souce landing page theme created to <span>your free personal use</span>.</p>
         </article>
     </section>
      </footer>
