@@ -1,12 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    background-color: bisque;
+    background-color: #ffff;
     text-align: center
 }
 
@@ -16,9 +17,17 @@ a {
 }
 
 h2 {
-    background-color: lemonchiffon;
-    color: rgb(204, 152, 85);
+    color: var(--color-azul);
     text-align: center;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif
+}
+
+.box--star {
+    margin: 20px;
+    color: #ffff;
+}
+.box--star-white {
+    margin: 20px;
+    color: var(--color-azul);
 }
