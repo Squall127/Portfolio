@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./variables.css');
 @import url('./general.css');
+@import url('./forms.css');
 
 
 .header {
@@ -84,7 +85,7 @@
     background-color: var(--color-verde);
     color: #ffff;
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 10px;
 }
 
 .main__section--portfolio hr {
@@ -105,6 +106,16 @@
     text-align: left;
     line-height: 30px;
     font-size: 1.25rem;
+}
+
+.main__section--portfolio hr .section--contact hr {
+    border: 20x solid 
+}
+
+.main__section--contact {
+    text-align:center;
+    padding: 80px 10px;
+    color: var(--color-azul);
 }
 
 .main__section--about a {
@@ -180,6 +191,14 @@ footer h3 {
     .box-text--about {
         padding: 0 30px;
         }
+
+    .main__section--about {
+        padding: 80px 40px;
+    }
+
+    .main__section--contact {
+        padding: 80px 40px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -219,7 +238,12 @@ footer h3 {
         display: flex;
         flex-wrap: nowrap;
         gap: 20px;
-        width: 60vw;
+        width: 55vw;
+        margin: 0 auto;
+    }
+
+    .main__section--contact {
+        width: 55vw;
         margin: 0 auto;
     }
 
